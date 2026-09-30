@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# CatBoost training logs
+catboost_info/
+
+# Environments and packages
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# IDE / Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Large datasets & raw data files
+data/
+train-test.csv
+validation.csv
+validation-predictions-template.csv
+
+# Reports and presentation documents
+*.pdf
+*.docx
+REPORT*
+LOOM*
+analysis/*.png
