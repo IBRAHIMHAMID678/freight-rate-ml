@@ -111,7 +111,7 @@ def main() -> None:
         sys.executable,
         str(score_script),
         "--predictions", str(sub_path_root),
-        "--december-predictions", str(data_dir / "december_chart_inputs.csv"),
+        "--december-predictions", str(dec_path if dec_path.is_file() else (data_dir / "december_chart_inputs.csv")),
         "--output-dir", str(ROOT / "scorer_results")
     ]
     result = subprocess.run(cmd, capture_output=True, text=True)
